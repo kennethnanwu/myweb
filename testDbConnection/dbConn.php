@@ -16,10 +16,7 @@ $sql = "SELECT * FROM events";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "name: " . $row["name"]. " - date: " . $row["date"]. ", location: " . $row["address"]. "<br>";
-    }
+	echo "got results.";
 } else {
     echo "0 results";
 }

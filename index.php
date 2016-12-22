@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+include("testDbConnection/dbConn.php");
+?>
 <html>
 <title>ACE (Alumnus of Chinese Engineers)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,49 +78,25 @@ body {font-family: "Lato", sans-serif}
       <ul class="w3-ul w3-border w3-white w3-text-grey">
         <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
         <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">4</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right"><?php echo count($result);?></span></li>
       </ul>
-
-      <div class="w3-third w3-margin-bottom">
-          <img src="img/Logo.png" alt="Lots" style="width:100%" class="w3-hover-opacity" onclick="document.getElementById('eventDetailModal').style.display='block'">
-          <div class="w3-container w3-white">
-            <p><b>Lots</b></p>
-            <p class="w3-opacity">event date</p>
-            <p class="w3-opacity">event location</p>
-            <p>brief description.</p>
-            <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
+      <!-- Ongoing Events -->
+        <?php
+        while($row = $result->fetch_assoc()) {
+        ?>
         <div class="w3-third w3-margin-bottom">
-          <img src="img/Logo.png" alt="Events" style="width:100%" class="w3-hover-opacity">
+          <img src="img/Logo.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity"  onclick="document.getElementById('eventDetailModal').style.display='block'">
           <div class="w3-container w3-white">
-            <p><b>Events</b></p>
-            <p class="w3-opacity">event date</p>
-            <p class="w3-opacity">event location</p>
-            <p>brief description.</p>
+            <p><b><?php echo $row["name"];?></b></p>
+            <p class="w3-opacity"><?php echo $row["date"];?></p>
+            <p class="w3-opacity"><?php echo $row["address"];?></p>
+            <p><?php echo $row["description"];?></p>
             <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
           </div>
         </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="img/Logo.png" alt="Coming" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Coming</b></p>
-            <p class="w3-opacity">event date</p>
-            <p class="w3-opacity">event location</p>
-            <p>brief description.</p>
-            <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="img/Logo.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>up</b></p>
-            <p class="w3-opacity">event date</p>
-            <p class="w3-opacity">event location</p>
-            <p>brief description.</p>
-            <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
+        <?php
+        }
+        ?>
       </div>
     </div>
   </div>
