@@ -15,9 +15,7 @@ if ($conn->connect_error) {
 $sql = "SELECT * FROM events";
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-	echo "got results.";
-} else {
+if ($result->num_rows <= 0) {
     echo "0 results";
 }
 $conn->close();

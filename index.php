@@ -1,14 +1,5 @@
 <html>
 <title>ACE (Alumnus of Chinese Engineers)</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-<body>
 <?php
 include("dbConn.php");
 include("navBar.php");
@@ -60,6 +51,7 @@ include("navBar.php");
             <p class="w3-opacity"><?php echo $row["date"];?></p>
             <p class="w3-opacity"><?php echo $row["address"];?></p>
             <p><?php echo $row["description"];?></p>
+            <p class="more_info"><a onclick="document.getElementById('eventDetailModal').style.display='block'">details...</a></p>
             <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
           </div>
         </div>
@@ -106,17 +98,42 @@ include("navBar.php");
       </div>
     </div>
   </div>
-  
-<?php
-include('contact.php');
-?>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Reach out to us!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Toronto, Canada<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +1 647-669-5699<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:acengineer.info@gmail.com">acengineer.info@gmail.com</a><br>
+      </div>
+      <div class="w3-col m6">
+        <form action="form.asp" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-btn w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
 <!-- End Page Content -->
 </div>
 
 <?php
 include('footer.php');
 ?>
+</html>
 
+<!-- Script -->
 <script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
@@ -167,7 +184,3 @@ function closeNavBar() {
 var smallMenu = document.getElementById('navDemo');
 
 </script>
-
-</body>
-</html>
-

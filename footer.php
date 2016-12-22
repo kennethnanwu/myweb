@@ -3,3 +3,5 @@
   <i class="fa fa-linkedin w3-hover-text-indigo"></i>
   <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+</body>
