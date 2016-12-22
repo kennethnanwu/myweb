@@ -1,6 +1,3 @@
-<?php
-include("testDbConnection/dbConn.php");
-?>
 <html>
 <title>ACE (Alumnus of Chinese Engineers)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,38 +9,10 @@ body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
 <body>
-
-<!-- Navbar -->
-<div class="w3-top">
-<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-padding-large" onclick="toggleNavigationMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-  </li>
-  <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large" onclick="closeNavBar()">HOME</a></li>
-  <li class="w3-hide-small"><a href="#club" class="w3-padding-large">CLUB</a></li>
-  <li class="w3-hide-small"><a href="#events" class="w3-padding-large">EVENTS</a></li>
-  <li class="w3-hide-small"><a href="#contact" class="w3-padding-large">CONTACT</a></li>
-  <li class="w3-hide-small w3-dropdown-hover">
-    <a class="w3-hover-none w3-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>     
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#" class="w3-hover-red">To</a>
-      <a href="#" class="w3-hover-red">Be</a>
-      <a href="#" class="w3-hover-red">Determined</a>
-    </div>
-  </li>
-  <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
-</ul>
-</div>
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <ul class="w3-navbar w3-left-align w3-black">
-    <li><a class="w3-padding-large" href="#club" onclick="closeNavBar()">CLUB</a></li>
-    <li><a class="w3-padding-large" href="#events" onclick="closeNavBar()">EVENTS</a></li>
-    <li><a class="w3-padding-large" href="#contact" onclick="closeNavBar()">CONTACT</a></li>
-  </ul>
-</div>
-
+<?php
+include("dbConn.php");
+include("navBar.php");
+?>
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
@@ -137,43 +106,16 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Reach out to us!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i>Toronto, Canada<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +1 647-669-5699<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:acengineer.info@gmail.com">acengineer.info@gmail.com</a><br>
-      </div>
-      <div class="w3-col m6">
-        <form action="form.asp" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-btn w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
   
+<?php
+include('contact.php');
+?>
 <!-- End Page Content -->
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
-  <i class="fa fa-linkedin w3-hover-text-indigo"></i>
-  <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+<?php
+include('footer.php');
+?>
 
 <script>
 // Automatic Slideshow - change image every 4 seconds
