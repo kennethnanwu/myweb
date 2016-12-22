@@ -102,7 +102,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- Event details -->
-  <div id="eventDetailModal" class="w3-modal" onclick="this.style.display='none'">
+  <div id="eventDetailModal" class="w3-modal">
   	<div class="w3-modal-content w3-animate-bottom w3-card-8">
   		<header class="w3-container w3-teal w3-center w3-padding-32 w3-white"> 
         <span onclick="document.getElementById('eventDetailModal').style.display='none'" 
@@ -203,10 +203,13 @@ function toggleNavigationMenu() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
+var ticketModal = document.getElementById('ticketModal');
+var eventDetailModal = document.getElementById('eventDetailModal');
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == ticketModal) {
+    ticketModal.style.display = "none";
+  } else if (event.target == eventDetailModal) {
+    eventDetailModal.style.display = "none";
   }
 }
 
