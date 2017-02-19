@@ -38,11 +38,11 @@ include("navBar.php");
       <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September: Orientation <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">September: Artificial Intellegence Seminar <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October: From Engineering To Business <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November: CDS Hackathon <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">January: Lunar New Year Party <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">September: Orientation <span class="w3-tag w3-red w3-right w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">September: Artificial Intellegence Seminar <span class="w3-tag w3-red w3-right w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October: From Engineering To Business <span class="w3-tag w3-red w3-right w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November: CDS Hackathon <span class="w3-tag w3-red w3-right w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">January: Lunar New Year Party <span class="w3-tag w3-red w3-right w3-margin-left">Sold out</span></li>
 
         <li class="w3-padding">Febuary <span class="w3-badge w3-right w3-margin-right">1</span></li>
       </ul>
