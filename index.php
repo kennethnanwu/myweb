@@ -12,14 +12,15 @@ include("navBar.php");
   </div>
 
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <div class="w3-container w3-content w3-padding-64 draw-when-load" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="w3-opacity w3-center"><i>Reach out to us!</i></p>
-    <div class="w3-center">
-      <div class="w3-col w3-center w3-large w3-margin-bottom">
+    <div class="w3-center draw-when-load">
+      <div class="w3-col w3-center w3-large w3-margin-bottom draw-when-load">
         <i class="fa fa-map-marker" style="width:30px"></i>Toronto, Canada<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +1 647-886-6673<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:shanshan.zhou@mail.utoronto.ca">shanshan.zhou@mail.utoronto.ca</a><br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +1 416-809-5599<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:jansin.cai@ace.skule.ca">jansin.cai@ace.skule.ca</a><br>
+        <i class="fa fa-wechat" style="width:30px"></i> WeChat Official Accounts: ut_ace<br>
       </div>
       <!-- <div class="w3-col m6">
         <form action="form.asp" target="_blank">
@@ -44,3 +45,4 @@ include("navBar.php");
 include('footer.php');
 ?>
 </html>
+

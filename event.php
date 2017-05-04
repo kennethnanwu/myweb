@@ -48,14 +48,15 @@ include("navBar.php");
       </ul>
       <!-- Ongoing Events -->
         <div class="w3-third w3-margin-bottom">
-          <img src="img/Logo.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity"  onclick="document.getElementById('eventDetailModal').style.display='block'">
+          <img src="img/runningman.jpg" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>UTACE Amazing Race</b></p>
             <p class="w3-opacity">Febuary 18</p>
             <p class="w3-opacity">Hart House</p>
-            <p class="more_info"><a onclick="document.getElementById('eventDetailModal').style.display='block'">details...</a></p>
+            <p class="more_info"><a href="https://www.eventbrite.ca/e/ace-amazing-race-tickets-32032345608#" target="_blank">details/tickets</a></p>
+            <!-- <p class="more_info"><a onclick="document.getElementById('eventDetailModal').style.display='block'">details...</a></p> -->
             <!-- <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
-            <p class="w3-btn w3-margin-bottom"><a href="https://www.eventbrite.ca/e/ace-amazing-race-tickets-32032345608#" target="_blank">Buy Tickets</a></p>
+            <!-- <p class="w3-btn w3-margin-bottom"><a href="https://www.eventbrite.ca/e/ace-amazing-race-tickets-32032345608#" target="_blank">Buy Tickets</a></p> -->
           </div>
         </div>
       </div>
@@ -132,7 +133,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000);    
+    setTimeout(carousel, 4000);    
 }
 
 </script>

@@ -3,7 +3,7 @@
 	    <a href="https://www.facebook.com/uoftace/" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
 	    <a id="wechatLogo"><i class="fa fa-wechat w3-hover-text-indigo"></i></a>	
 	    <a id="wechatQR"><img src="img/wechatQR.jpeg" style=""></a>
-	    <p class="w3-medium">Powered by w3.css</p>
+	    <p></p>
     </div>
 </footer>
 

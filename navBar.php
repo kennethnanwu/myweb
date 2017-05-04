@@ -13,8 +13,8 @@ body {font-family: "Lato", sans-serif}
 
 <body>
 <!-- Navbar -->
-<div class="w3-top">
-<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+<div class="w3-top draw-when-load">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align draw-when-load">
   <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
     <a class="w3-padding-large" onclick="toggleNavigationMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </li>
