@@ -3,7 +3,7 @@
 	    <a href="https://www.facebook.com/uoftace/" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
 	    <a id="wechatLogo"><i class="fa fa-wechat w3-hover-text-indigo"></i></a>	
 	    <a id="wechatQR"><img src="img/wechatQR.jpeg" style=""></a>
-	    <p></p>
+	    <p class="w3-medium">Created by <a href="https://www.linkedin.com/in/nan-wu-328198b1/" target="_blank">Nan Wu</a></p>
     </div>
 </footer>
 
