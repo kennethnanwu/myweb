@@ -1,6 +1,7 @@
 <html>
 <title>ACE (Alumnus of Chinese Engineers)</title>
 <?php
+require 'config.php';
 include("navBar.php");
 ?>
 <!-- Page content -->
@@ -19,7 +20,7 @@ include("navBar.php");
       <div class="w3-col w3-center w3-large w3-margin-bottom draw-when-load">
         <i class="fa fa-map-marker" style="width:30px"></i>Toronto, Canada<br>
         <i class="fa fa-phone" style="width:30px"></i> Phone: +1 416-809-5599<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:jansin.cai@ace.skule.ca">jansin.cai@ace.skule.ca</a><br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:jansin.cai@ace.skule.ca">jansin<span class="hidden">stop spam</span>.cai@ace.skule.ca</a><br>
         <i class="fa fa-wechat" style="width:30px"></i> WeChat Official Accounts: ut_ace<br>
       </div>
       <!-- <div class="w3-col m6">
@@ -45,4 +46,8 @@ include("navBar.php");
 include('footer.php');
 ?>
 </html>
+
+<style>
+  .hidden { display: none; }
+</style>
 

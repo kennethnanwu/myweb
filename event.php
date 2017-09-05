@@ -7,7 +7,7 @@ include("navBar.php");
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Event photos -->
-  <div class="w3-black">
+ <!--  <div class="w3-black">
     <div class="mySlides w3-display-container w3-center">
       <img src="img/eventSnapshot/clubday.jpg" style="height: 60%">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
@@ -29,7 +29,7 @@ include("navBar.php");
     <div class="mySlides w3-display-container w3-center">
       <img src="img/eventSnapshot/newyear2.jpg" style="height: 60%">
     </div>
-  </div>
+  </div> -->
 
   <!-- The Event Section -->
   <div class="w3-black" id="events">
@@ -53,8 +53,8 @@ include("navBar.php");
             <p><b>UTACE Amazing Race</b></p>
             <p class="w3-opacity">Febuary 18</p>
             <p class="w3-opacity">Hart House</p>
-            <p class="more_info"><a href="https://www.eventbrite.ca/e/ace-amazing-race-tickets-32032345608#" target="_blank">details/tickets</a></p>
-            <!-- <p class="more_info"><a onclick="document.getElementById('eventDetailModal').style.display='block'">details...</a></p> -->
+            <!-- <p class="more_info"><a href="https://www.eventbrite.ca/e/ace-amazing-race-tickets-32032345608#" target="_blank">details/tickets</a></p> -->
+            <p class="more_info"><a onclick="document.getElementById('eventDetailModal').style.display='block'">details/tickets</a></p>
             <!-- <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
             <!-- <p class="w3-btn w3-margin-bottom"><a href="https://www.eventbrite.ca/e/ace-amazing-race-tickets-32032345608#" target="_blank">Buy Tickets</a></p> -->
           </div>
@@ -66,19 +66,22 @@ include("navBar.php");
   <!-- Event details -->
   <div id="eventDetailModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-bottom w3-card-8">
-      <header class="w3-container w3-teal w3-center w3-padding-32 w3-white"> 
+      <header class="w3-container w3-teal w3-center w3-padding-8 w3-white"> 
         <span onclick="document.getElementById('eventDetailModal').style.display='none'" 
-       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright w3-hover-red">x</span>
-        <h2 class="w3-wide">Amazing Race</h2>
+       class="w3-closebtn w3-padding-xlarge w3-xlarge w3-display-topright w3-hover-red">x</span>
+        <h3>Amazing Race</h3>
       </header>
       <div class="w3-container">
-        <p>Have you ever wanted to try some of the challenges on Running Man? Well now is your chance! Association of Chinese Engineers is hosting our annual sports event - AMAZING RACE! Take a break from your studies and get some fun exercise with UTACE. Did we mention there will also be $300 in total prizes (for 1st, 2nd, and 3rd place)!!!
+        <p class="w3-large">Have you ever wanted to try some of the challenges on Running Man? Well now is your chance! Association of Chinese Engineers is hosting our annual sports event - AMAZING RACE! Take a break from your studies and get some fun exercise with UTACE. Did we mention there will also be $300 in total prizes (for 1st, 2nd, and 3rd place)!!!
         </p>
+      </div>
+      <div class="w3-container  w3-center">
+        <p class="w3-btn"><a href="https://www.eventbrite.ca/e/ace-amazing-race-tickets-32032345608#" target="_blank">Buy Tickets</a></p> 
       </div>
     </div>
   </div>
 
-  <!-- Ticket Modal -->
+  <!-- Ticket Modal
   <div id="ticketModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-bottom w3-card-8">
       <header class="w3-container w3-teal w3-center w3-padding-32 w3-white"> 
@@ -121,19 +124,19 @@ window.onclick = function(event) {
 }
 
 // Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+// var myIndex = 0;
+// carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
+// function carousel() {
+//     var i;
+//     var x = document.getElementsByClassName("mySlides");
+//     for (i = 0; i < x.length; i++) {
+//        x[i].style.display = "none";  
+//     }
+//     myIndex++;
+//     if (myIndex > x.length) {myIndex = 1}    
+//     x[myIndex-1].style.display = "block";  
+//     setTimeout(carousel, 4000);    
+// }
 
 </script>
