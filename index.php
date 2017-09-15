@@ -1,9 +1,12 @@
+<?php require 'config.php';?>
+
 <html>
-<title>ACE (Alumnus of Chinese Engineers)</title>
-<?php
-require 'config.php';
-include("navBar.php");
-?>
+<head>
+  <title>ACE (Alumnus of Chinese Engineers)</title>
+  <?php include('hearder.php'); ?>
+</head>
+<body>
+<?php include("navBar.php"); ?>
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
@@ -41,7 +44,7 @@ include("navBar.php");
   </div>
 <!-- End Page Content -->
 </div>
-
+</body>
 <?php
 include('footer.php');
 ?>

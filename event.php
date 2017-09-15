@@ -1,8 +1,19 @@
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.more_info{
+  text-decoration: underline;
+  cursor: pointer;
+}
+</style>
+
 <html>
-<title>ACE (Alumnus of Chinese Engineers)</title>
-<?php
-include("navBar.php");
-?>
+<head>
+  <title>ACE (Alumnus of Chinese Engineers)</title>
+  <?php include('header.php'); ?>
+</head>
+<body>
+<?php include("navBar.php"); ?>
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
@@ -34,7 +45,7 @@ include("navBar.php");
   <!-- The Event Section -->
   <div class="w3-black" id="events">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">EVENT DATES</h2>
+      <h2 class="w3-wide w3-center">EVENTS</h2>
       <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
@@ -61,7 +72,6 @@ include("navBar.php");
         </div>
       </div>
     </div>
-  </div>
 
   <!-- Event details -->
   <div id="eventDetailModal" class="w3-modal">
@@ -103,7 +113,7 @@ include("navBar.php");
 
 <!-- End Page Content -->
 </div>
-
+</body>
 <?php
 include('footer.php');
 ?>

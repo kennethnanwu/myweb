@@ -1,17 +1,3 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-.more_info{
-  text-decoration: underline;
-  cursor: pointer;
-}
-</style>
-
-<body>
 <!-- Navbar -->
 <div class="w3-top draw-when-load">
 <ul class="w3-navbar w3-black w3-card-2 w3-left-align draw-when-load">

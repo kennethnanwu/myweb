@@ -7,8 +7,6 @@
     </div>
 </footer>
 
-</body>
-
 <script>
 var e = document.getElementById('wechatLogo');
 e.onmouseover = function() {
@@ -18,6 +16,7 @@ e.onmouseout = function() {
   document.getElementById('wechatQR').style.display = 'none';
 }
 </script>
+
 <style>
 #footer_inner{
 	position: relative;

@@ -1,8 +1,11 @@
 <html>
+<head>
 <title>Association of Chinese Engineers</title>
-<?php
-include("navBar.php");
-?>
+<?php include('header.php'); ?>
+</head>
+<body>
+
+<?php include("navBar.php"); ?>
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
   <!-- The Club Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="club">
@@ -117,6 +120,7 @@ include("navBar.php");
   </div>
 <!-- End Page Content -->
 </div>
+</body>
 <?php
 include('footer.php');
 ?>
