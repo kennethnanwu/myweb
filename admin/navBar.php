@@ -4,25 +4,15 @@
   <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
     <a class="w3-padding-large" onclick="toggleNavigationMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </li>
-  <li><a href="index.php" class="w3-hover-none w3-hover-text-grey w3-padding-large" onclick="closeNavBar()">HOME</a></li>
-  <li class="w3-hide-small"><a href="event.php" class="w3-padding-large">EVENTS</a></li>
-  <li class="w3-hide-small"><a href="club.php" class="w3-padding-large">ABOUT</a></li>
-  <li class="w3-hide-small w3-dropdown-hover">
-    <a class="w3-hover-none w3-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>     
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="admin/ace_admin_login.php" class="w3-hover-red">To</a>
-      <a href="#" class="w3-hover-red">Be</a>
-      <a href="#" class="w3-hover-red">Determined</a>
-    </div>
-  </li>
+  <li><a href="aceadmin.php" class="w3-hover-none w3-hover-text-grey w3-padding-large" onclick="closeNavBar()">HOME</a></li>
+  <li class="w3-hide-small"><a href="addEvents.php" class="w3-padding-large">ADD EVENTS</a></li>
 </ul>
 </div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <ul class="w3-navbar w3-left-align w3-black">
-    <li><a class="w3-padding-large" href="club.php"  onclick="closeNavBar()">CLUB</a></li>
-    <li><a class="w3-padding-large" href="event.php" onclick="closeNavBar()">EVENTS</a></li>
+    <li><a class="w3-padding-large" href="addEvents.php" onclick="closeNavBar()">ADD EVENTS</a></li>
   </ul>
 </div>
 

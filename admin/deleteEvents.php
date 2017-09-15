@@ -1,5 +1,5 @@
 <?php
-include_once 'dbConn.php';
+include_once '../dbConn.php';
 $cheks = implode("','", $_POST['checkbox']);
 $sql = "DELETE FROM events WHERE id IN ('$cheks')";
 $page = 'aceadmin.php';

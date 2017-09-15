@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-include_once 'dbConn.php';
+include_once '../dbConn.php';
 
 if(isset($_POST['btn-signup']))
 {

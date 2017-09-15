@@ -1,4 +1,5 @@
-<script>
+// Repo for all JS scripts used
+
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
@@ -46,5 +47,3 @@ function closeNavBar() {
 
 // Close when the user clicks anywhere outside the menu on small screens
 var smallMenu = document.getElementById('navDemo');
-
-</script>

@@ -1,9 +1,7 @@
-<?php require 'config.php';?>
-
 <html>
 <head>
   <title>ACE (Alumnus of Chinese Engineers)</title>
-  <?php include('hearder.php'); ?>
+  <?php include('header.php'); ?>
 </head>
 <body>
 <?php include("navBar.php"); ?>

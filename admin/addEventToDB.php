@@ -2,7 +2,7 @@
 	session_start();
 	date_default_timezone_set('America/Toronto');
 	// ini_set("date.timezone", "America/Toronto");
-	include_once 'dbConn.php';
+	include_once '../dbConn.php';
 	$addEventPage = 'addEvents.php';
 	$sec = 5;
 
@@ -25,18 +25,23 @@
 
 		// Validate upload file
 	    if ($_FILES['eventPic']['size'] != 0 && is_uploaded_file($_FILES['eventPic']['tmp_name'])) {
-			// Upload file to server
-			$uploaddir = 'img/';
-			$uploadedFileName = basename($_FILES['eventPic']['name']);
+			$uploaddir = '../img/';
+			$uploadedFileName = mysqli_real_escape_string($dbc, trim(basename($_FILES['eventPic']['name'])));
 			$uploadFile = $uploaddir . $uploadedFileName;
-
-			if (move_uploaded_file($_FILES['eventPic']['tmp_name'], $uploadFile)) {
-				$picLocation = $uploadFile;
-			} else {
-				header("refresh:$sec;url=$addEventPage", true, 303);
-			    echo("Possible file upload attack!\n");
-			    echo 'Here is some more debugging info:';
-				print_r($_FILES);
+			$fileTYpe = pathinfo($uploadFile, PATHINFO_EXTENSION);
+			// CHECK IF IMAGE FILE IS A ACTUAL IMAGE OR FAKE IMAGE
+			$check = getimagesize($_FILES["eventPic"]["tmp_name"]);
+			if ($check !== false) {
+				// if (!file_exists($uploadFile) && move_uploaded_file($_FILES['eventPic']['tmp_name'], $uploadFile)) { // Check if file exists as well
+				if (move_uploaded_file($_FILES['eventPic']['tmp_name'], $uploadFile)) {
+					$picLocation = $uploadFile;
+				} else {
+					// header("refresh:$sec;url=$addEventPage", true, 303);
+				    echo("Possible file upload attack!\n");
+				    echo 'Here is some more debugging info:';
+					print_r($_FILES);
+					exit;
+				}
 			}
 		}
 
