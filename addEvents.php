@@ -56,6 +56,9 @@
     <label for="eventdescription">Event description:</label>
     <textarea name="eventdescription" cols="40" rows="6"></textarea><br/>
 
+    <label for="eventlink">Event signup page link:</label>
+    <input type="text" name="eventlink"><br/>
+
     <!-- <input type="hidden" name="MAX_FILE_SIZE" value="30000" /> -->
     Event picture: <input name="eventPic" type="file" /><br/>
     <input type="submit" value="Submit" name="submit"/>
